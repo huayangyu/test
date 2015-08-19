@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "D.h"
+#import "ZbarVC.h"
+#import "NetTestVC.h"
+#import "UserdefaultsVc.h"
+#import "DrawRectTVC.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +20,16 @@
 
 @implementation AppDelegate
 
++ (void)load {
+
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:[[DrawRectTVC alloc] init]];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 

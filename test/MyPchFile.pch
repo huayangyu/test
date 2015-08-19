@@ -1,0 +1,32 @@
+//
+//  MyPchFile.pch
+//  test
+//
+//  Created by Charlie on 15/7/29.
+//  Copyright (c) 2015年 Charlie. All rights reserved.
+//
+
+#ifndef test_MyPchFile_pch
+#define test_MyPchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Defines.h"
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#endif
+
+#endif
